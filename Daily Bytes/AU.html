@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>AU</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\ani.css">
+<style>
+*{
+  box-sizing : border-box;
+
+}
+body 
+{
+  margin: 0;
+   background: #f1f1f1;
+    background-image:url("Images/BG.jpg");
+     font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.header {
+  background-color: #000000;  
+  padding: 30px;
+  text-align: left;
+  color:  #E9967A; 
+  font-size: 25px; 
+ }
+
+ .topnav {
+  
+ overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color:#E9967A;
+  color: black;
+  
+  /* Create three unequal columns that floats next to each other */
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-left: 275px;
+  font-size: 18px;
+  width: 1000px;
+
+} 
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 23%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 78%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.textwrap{
+  float: left;
+  margin: 30px;
+
+}
+ .button {
+  background-color: #A52A2A;
+  color: white;
+  font-size: 16px;
+  padding: 16px 30px;
+  float: right;
+  margin: 30px;
+ 
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+   background-color: grey;
+  color: white;
+  text-decoration: none;
+  opacity: 1}
+
+.vl {
+  border-right: 6px solid green;
+  height: 500px;
+}
+input {
+    opacity: 100%;
+  margin:0px;
+  padding:10px;
+  width: 35%;
+  font-size: 14px;
+  font-family: "Arial",serif;
+  border: 1px solid #aaaaaa;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  float: right;
+}
+
+</style>
+
+</head>
+<body>
+  <div class="header">
+   <h1>Daily Bites</h1>
+</div>
+
+<div class="topnav">
+    <a href="HOMEPAGE.html">HOME</a>
+    <a href="ABOUT.html">ABOUT US</a>
+    <a href="CONTACTUS.html">CONTACT US</a>
+    <a href="HOWITWORKS.html">HOW IT WORKS</a>
+</div>
+
+      <div class="row">
+         
+          <div class="column middle">
+            <div class="card">
+                 <center>
+             <h2> अमर उजाला</h2>
+          </center>  
+           <img class="textwrap"  src="Images\5.jpg"><p style="color:#2F4F4F";><br>
+
+           अमर उजाला भारत में प्रकाशित एक हिंदी-भाषा दैनिक समाचार पत्र है। इसमें सात राज्यों में 19 संस्करण हैं और 167 जिलों को कवर करते हुए एक केंद्र शासित प्रदेश है। इसकी लगभग दो मिलियन प्रतियों का प्रचलन है। भारत में समाचार पत्रों के बीच इसका 12 वाँ सबसे बड़ा दैनिक पाठक वर्ग था। अमर उजाला प्रतिदिन 16 से 18 पेज का अंक प्रकाशित करता है और करियर, जीवन शैली, मनोरंजन और महिलाओं जैसे मामलों पर ध्यान केंद्रित करता है। अमर उजाला सिर्फ अखबार नहीं है। यह एक परिवर्तन एजेंट भी है। "इरादा कई शहरों में छोटी घटनाओं को आयोजित करने का है जो स्थानीय ग्रामीण अर्थव्यवस्था में महत्वपूर्ण प्रतिभागियों को कृषि आधारित सेवा व्यवसायों और सरकारी एजेंसियों के साथ एक साथ लाएगा। अमर उजाला सदस्यता प्रस्ताव नीचे सूचीबद्ध हैं। डॉन ' t एक और मुद्दा याद आता है, आज सदस्यता लें!
+           </p>
+           <br>
+                <form method="POST" action="mid.php">
+                <input placeholder="Enter your valid username" name="usname" id="usn">
+                <br><br> 
+               <button class="button" type="submit" name="timesofindia">SUBSCRIBE</button>
+             </form>
+                 
+                           <h4>केवल Rs.100 / महीने पर..!!    </h4>
+            
+           <br>
+          
+             
+
+            </div>
+          
+
+
+          </div>
+
+          </div>
+
+      </div>
+
+</body>
+</html>

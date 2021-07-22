@@ -1,0 +1,21 @@
+Steps for placing newspaper folder:
+1) XAMPP software should be installed in your PC.
+2) Paste the newpaperdelivery folder in xampp/htdocs
+
+Steps for placing database:
+1) Open phpmyadmin from xampp control panel.
+2) Create a new database and save as newspaper.
+3) Import signup.sql in newspaper database.
+
+For visiting website:
+1) Start apache and MySql from xampp control panel.
+
+2) Open login.html from newspaperdelivery folder.
+   Note: Change url from 
+	url: file:///C:/xampp/x1/htdocs/newspaperdelivery/login.html
+	
+	to:- http://localhost/newspaperdelivery/login.html
+
+	OR directly paste given above link.
+
+	

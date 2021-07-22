@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+  align-content: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+body 
+{
+  background-image: url("../newspaperdelivery/css/BG.jpg");
+}
+#regForm {
+  background-color: #000000;
+
+
+  
+  margin: 100px auto;
+  font-family: Raleway;
+  font-size:25px;
+  color: #E9967A; 
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+}
+
+h1 {
+  text-align: center; 
+  font-size: 30px; 
+}
+
+input {
+  margin:auto;
+  padding: 10px;
+  width: 50%;
+  font-size: 17px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border: 1px solid #aaaaaa;
+}
+
+/* Mark input boxes that gets an error on validation: */
+input.invalid {
+  background-color: #ffdddd;
+}
+
+/* Hide all steps by default: */
+.tab {
+  display: none;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+button {
+  background-color: #E9967A;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 17px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+#prevBtn {
+  background-color: #FAEBD7;
+  color: #000000;
+}
+
+/* Make circles that indicate the steps of the form: */
+.step {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #E9967A;
+  border: none;  
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  border-radius: 100%;
+  display: inline-block;
+  opacity: 0.5;
+}
+
+.step.active {
+  opacity: 1;
+}
+
+/* Mark the steps that are finished and valid: */
+.step.finish {
+  background-color: #E9967A;
+}
+</style>

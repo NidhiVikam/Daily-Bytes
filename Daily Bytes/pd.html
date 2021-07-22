@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Pd</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\ani.css">
+<style>
+*{
+  box-sizing : border-box;
+
+}
+body 
+{
+  margin: 0;
+   background: #f1f1f1;
+    background-image:url("Images/BG.jpg");
+     font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.header {
+  background-color: #000000;  
+  padding: 30px;
+  text-align: left;
+  color:  #E9967A;
+  font-size: 25px;  
+ }
+
+ .topnav {
+  
+ overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color:#E9967A;
+  color: black;
+  
+  /* Create three unequal columns that floats next to each other */
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-left: 275px;
+  font-size: 18px;
+  width: 1000px;
+
+} 
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 23%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 78%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.textwrap{
+  float: left;
+  margin: 30px;
+
+}
+ .button {
+  background-color: #A52A2A;
+  color: white;
+  font-size: 16px;
+  padding: 16px 30px;
+  float: right;
+  margin: 30px;
+ 
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+   background-color: grey;
+  color: white;
+  text-decoration: none;
+  opacity: 1}
+
+.vl {
+  border-right: 6px solid green;
+  height: 500px;
+}
+input {
+    opacity: 100%;
+  margin:0px;
+  padding:10px;
+  width: 35%;
+  font-size: 14px;
+  font-family: "Arial",serif;
+  border: 1px solid #aaaaaa;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  float: right;
+}
+</style>
+
+</head>
+<body>
+  <div class="header">
+   <h1>Daily Bites</h1>
+</div>
+
+<div class="topnav">
+    <a href="HOMEPAGE.html">HOME</a>
+    <a href="ABOUT.html">ABOUT US</a>
+    <a href="CONTACTUS.html">CONTACT US</a>
+    <a href="HOWITWORKS.html">HOW IT WORKS</a>
+</div>
+
+      <div class="row">
+         
+          <div class="column middle">
+            <div class="card">
+                 <center>
+             <h2> पुढारी</h2>
+          </center>  
+           <img class="textwrap"  src="Images\6.jpg"><p style="color:#2F4F4F";><br><br><br>
+             पुधरी एक लोकप्रिय मराठी दैनिक है, जिसे तीन केंद्रों में मुद्रित किया जाता है और महाराष्ट्र, गोवा और उत्तरी कर्नाटक में वितरित किया जाता है। यह कोल्हापुर और पश्चिमी महाराष्ट्र में अग्रणी है और पूरे महाराष्ट्र राज्य में दैनिक रूप से तीसरा सबसे बड़ा मराठी समाचार पत्र है। सत्यवादी के साथ, यह राज्य के दो सबसे पुराने जीवित अखबारों में से एक है।
+             <br>
+             पुधरी को 1937 में एक साप्ताहिक के रूप में स्थापित किया गया था और 1939 में दैनिक रूप से बदल दिया गया। 1943 में, गणपतराव जाधव इसके नए मालिक बन गए। प्रतापसिंह जाधव उनके नक्शेकदम पर चले।
+           </p>
+           <br>
+             <form method="POST" action="pd.php">
+                <input placeholder="Enter your valid username" name="usname" id="usn">
+                <br><br>
+               <button class="button" type="submit" name="timesofindia">SUBSCRIBE</button>
+             </form>
+                 
+                           <h4>
+फक्त रू .99 / महिन्यात.!!!  </h4>
+            
+           <br>
+          
+             
+
+            </div>
+          
+
+
+          </div>
+
+          </div>
+
+      </div>
+
+</body>
+</html>

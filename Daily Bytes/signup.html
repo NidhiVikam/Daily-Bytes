@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+   
+    <title>Signup form</title>
+<style>
+* {
+  box-sizing: border-box;
+  align-content: center;
+  font-family: "Comic Sans MS",sans-serif;
+}
+
+body 
+{
+  background-image:url("../newspaperdelivery/css/BG.jpg");
+}
+#regForm {
+  background-color: rgba(0, 0, 5, 0.9);
+  margin: 100px auto;
+  font-family: "Arial",serif;
+  font-size:25px;
+  color: #d44639; 
+  padding: 40px;
+  width: 50%;
+  min-width: 300px;
+}
+
+
+
+  h1 {
+  text-align: center; 
+  font-size: 30px; 
+}
+
+  input {
+    opacity: 100%;
+  margin:0px;
+  padding:10px;
+  width: 50%;
+  font-size: 14px;
+  font-family: "Arial",serif;
+  border: 1px solid #aaaaaa;
+  text-align: center;
+    font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+  .button {
+  background-color: #d11d0d;
+  color: #ffffff;
+  border: none;
+  padding: 10px;
+  font-size: 20px;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  cursor: pointer;
+ }
+
+ .button:hover {
+  opacity: 0.8;
+ }
+ 
+
+</style>
+</head>
+
+<body>
+ 
+  
+
+<form id="regForm" action="register.php" method="POST" onsubmit="return validation()">
+  <h1>SIGN UP:</h1>
+  
+  <div class="ex1">First Name
+    <br><input placeholder="Enter your first name." name="fname" id="fn">
+    <br>Last Name
+  <br> <input placeholder="Enter your last name" name="lname" id="ln">
+  
+ 
+  
+<br>
+    E-mail<br><input type="email" placeholder="E-mail..."  name="email" id="em">
+    <br>
+  Contact no.<br><input placeholder="Phone..." name="phone" id="no">
+  
+  <br>    
+  
+  Address:
+    <br><textarea rows="5" cols="60" name="address" id="add"> </textarea>
+     
+
+  <br>Username
+    <br><input placeholder="Username..." name="uname" id="un" autocomplete="off"><br>
+  Password<br>
+    <input type="password" placeholder="Password" name="password" id="pass">
+    <br>
+  Confirm Password
+  <br>
+    <input type="password" placeholder="Confirm Password" name="cpassword" id="cpass">
+    <br><br>
+    <center>
+     <input type="submit" class="button" name="regBtn" value="Register" id="sub"> 
+  </div>
+  <br>
+  </center>
+
+
+  
+   
+    
+  
+ 
+</form>
+
+    <script>
+
+function validation() 
+{
+  var fname = document.getElementById("fn");
+  var lname = document.getElementById("ln");
+  var email = document.getElementById("em");
+  var phone = document.getElementById("no");
+  var username = document.getElementById("un");
+  var password = document.getElementById("pass");
+  var cpassword = document.getElementById("cpass");
+  var mobilepattern = /^[789][0-9]{9}$/;
+  if (username.value.trim()==""|| password.value.trim()==""|| fname.value.trim()==""|| lname.value.trim()==""|| email.value.trim()==""|| phone.value.trim()=="")
+  {
+    alert("No Blank Value allowed");
+    return false;
+  }
+  else
+  {    
+    if(mobilepattern.test(phone.value)==false)
+    {
+      alert("Enter valid phone no");
+      return false;
+    }
+    else
+    {
+      if (password.value!=cpassword.value) 
+      {
+        alert("Password Does Not Match");
+        return false;
+      }
+      else
+      {
+        return true;
+      }
+    }
+  }
+}
+
+</script>
+
+
+</body>
+</html>
+
+

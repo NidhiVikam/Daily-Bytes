@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>DJ</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="css\ani.css">
+<style>
+*{
+  box-sizing : border-box;
+
+}
+body 
+{
+  margin: 0;
+   background: #f1f1f1;
+    background-image:url("Images/BG.jpg");
+     font-family: "Comic Sans MS", cursive, sans-serif;
+
+}
+
+.header {
+  background-color: #000000;  
+  padding: 30px;
+  text-align: left;
+  color:  #E9967A;  
+ }
+
+ .topnav {
+  
+ overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.topnav a:hover {
+  background-color:#E9967A;
+  color: black;
+  
+  /* Create three unequal columns that floats next to each other */
+}
+
+.card {
+  background-color: #f5f5f5;
+  padding: 20px;
+  margin-left: 275px;
+  font-size: 18px;
+  width: 1000px;
+
+} 
+.column {
+  float: left;
+  padding: 10px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 23%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 78%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.textwrap{
+  float: left;
+  margin: 30px;
+
+}
+ .button {
+  background-color: #A52A2A;
+  color: white;
+  font-size: 16px;
+  padding: 16px 30px;
+  float: right;
+  margin: 30px;
+ 
+  cursor: pointer;
+  text-decoration: none;
+  text-align: center;
+}
+.button:hover {
+   background-color: grey;
+  color: white;
+  text-decoration: none;
+  opacity: 1}
+
+.vl {
+  border-right: 6px solid green;
+  height: 500px;
+}
+input {
+    opacity: 100%;
+  margin:0px;
+  padding:10px;
+  width: 35%;
+  font-size: 14px;
+  font-family: "Arial",serif;
+  border: 1px solid #aaaaaa;
+  text-align: center;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  float: right;
+}
+</style>
+
+</head>
+<body>
+  <div class="header">
+   <h1>Online Newspaper Delivery System.</h1>
+</div>
+
+<div class="topnav">
+    <a href="HOMEPAGE.html">HOME</a>
+    <a href="ABOUT.html">ABOUT US</a>
+    <a href="CONTACTUS.html">CONTACT US</a>
+    <a href="HOWITWORKS.html">HOW IT WORKS</a>
+</div>
+
+      <div class="row">
+         
+          <div class="column middle">
+            <div class="card">
+                 <center>
+             <h2> दैनिक जागरण</h2>
+          </center>  
+           <img class="textwrap"  src="Images\4.JPG"><p style="color:#2F4F4F";><br>
+            दैनिक जागरण (दैनिक जागरण) एक भारतीय हिंदी दैनिक समाचार पत्र है। 2017 में यह संचलन द्वारा भारत का सबसे बड़ा समाचार पत्र था।  2010 तक यह दुनिया में 17 वां सबसे अधिक पढ़ा गया।
+            अखबार की शुरुआत 1942 में पूरन चंद्र गुप्ता द्वारा की गई थी और बाद में नरेंद्र मोहन ने इसका संपादन किया।  इसका स्वामित्व जागरण प्रकाशन लिमिटेड के पास है, जो बॉम्बे स्टॉक एक्सचेंज और नेशनल स्टॉक एक्सचेंज ऑफ़ इंडिया में सूचीबद्ध एक प्रकाशन गृह है।
+           </p>
+           <br><br><br><br><br>
+             <form method="POST" action="ht.php">
+                <input placeholder="Enter your valid username" name="usname" id="usn">
+                <br><br>
+               <button class="button" type="submit" name="timesofindia">SUBSCRIBE</button>
+             </form>
+                 
+                           <h4>केवल Rs.100 / महीने पर..!!  </h4>
+            
+           <br>
+          
+             
+
+            </div>
+          
+
+
+          </div>
+
+          </div>
+
+      </div>
+
+</body>
+</html>
